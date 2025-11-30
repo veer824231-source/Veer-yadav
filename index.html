@@ -1,0 +1,370 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Veer Profitolo Website</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- AOS Animation Library -->
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    background:#fff;
+    overflow-x:hidden;
+/* NAVBAR (GLASS EFFECT) */
+nav{
+    width:100%;
+    padding:23px 75px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:sticky;
+    top:0;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    z-index:100;
+}
+nav .logo{
+    font-size:25px;
+    font-weight:750;
+}
+
+nav ul{
+    display:flex;
+    gap:35px;
+}
+
+nav ul li{
+    list-style:none;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:0.3s;
+}
+nav ul li a:hover{
+    color:#4B6BFB;
+}
+
+/* HERO SECTION */
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:80px 70px;
+    position:relative;
+}
+.hero-left h1{
+    font-size:55px;
+    font-weight:700;
+}
+.hero-left .highlight{
+    color:#FF7A00;
+}
+.hero-left p{
+    font-size:22px;
+    margin-top:15px;
+}
+
+.btn{
+    margin-top:30px;
+    display:inline-block;
+    background:#1A0AFF;
+    padding:12px 25px;
+    border-radius:30px;
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+    transition:0.3s;
+}
+.btn:hover{
+    transform:scale(1.5);
+}
+
+.hero-right{
+    width:380px;
+    height:380px;
+    background:#FFCC00;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.hero-right img{
+    width:445px;
+     margin-top: -20px;
+}
+
+/* Background lines animation */
+canvas{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-0;
+}
+
+/* SECTIONS */
+section{
+    padding:80px 80px;
+}
+
+.section-title{
+    font-size:40px;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.about-box,
+.skills-box,
+.project-card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 3px 15px rgba(0,0,0,0.1);
+    margin-top:20px;
+}
+
+/* Skills */
+.skills-list{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+}
+.skill{
+    background:#1A0AFF;
+    padding:10px 20px;
+    color:white;
+    border-radius:50px;
+    font-size:20px;
+}
+
+/* Projects */
+.project-card{
+    margin-top:30px;
+}
+.project-title{
+    font-size:30px;
+    font-weight:600;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <div class="logo">Veer Kumar</div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- BACKGROUND LINES -->
+<canvas id="bg"></canvas>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="hero-left" data-aos="fade-right">
+        <h1>Hi There,<br>I'm <span class="highlight">Veer Yadav</span></h1>
+        <p>I Am a Web Developer And A Hacker</p>
+        <a class="btn" href="#about">About Me swipe it</a>
+    </div>
+
+    <div class="hero-right" data-aos="fade-left">
+        <img src="nn.png">
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2 class="section-title" data-aos="fade-up">About Me</h2>
+
+    <div class="about-box" data-aos="fade-up">
+        <p>
+            I am a passionate web developer who loves building modern,<br>
+            clean and fast websites. I enjoy front-end & back-end both.<br>
+           I live in <font color="blue">Bodhgaya Pachaatti with happy and peace.<br></font>
+I Study in Shanti India School near Bypass,<br>
+I loves in creating websites and application,<br>
+I study in my school since 2017<br>
+I dont want to become any Doctor or Enginner ,<br>
+
+            I was born on   <font color="red">19th august 2011 in bihar.<br></font>
+            <font color="green" SIZE="5px">This Is About Me Swipe Down For More Details.<br></font>
+        </p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2 class="section-title" data-aos="fade-down">My Skills</h2>
+
+    <div class="skills-box" data-aos="zoom-out">
+        <div class="skills-list">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">React</span>
+            <span class="skill">Node.js</span>
+            <span class="skill">MongoDB</span>
+  <span class="skill">Python</span>
+<span class="skill">Notepad++</span>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2 class="section-title" data-aos="fade-up">Projects</h2>
+
+    <div class="project-card" data-aos="zoom-out">
+        <p class="project-title">🌐 Portfolio Website</p>
+        <p>A modern portfolio website with animations.</p>
+    </div>
+ <div class="project-card" data-aos="zoom-out">
+        <p class="project-title">🎮 Games</p>
+        <p>All Types Of Games with hd resoloutions.</p>
+    </div>
+<div class="project-card" data-aos="zoom-out">
+        <p class="project-title">🎥Videos</p>
+        <p>I edits Bmw Likes Videos on social media.</p>
+    </div>
+    <div class="project-card" data-aos="zoom-out">
+        <p class="project-title">📱 Social Media App</p>
+        <p>A full-stack social media app with login + feed system.</p>
+    </div>
+ <div class="project-card" data-aos="zoom-out">
+        <p class="project-title">🌐 Portfolio Website</p>
+        <p>A modern portfolio website with animations.</p>
+    </div>
+
+ <div class="project-card" data-aos="zoom-out">
+        <p class="project-title">👨‍💻 Editing</p>
+        <p>Editing videos and upload on social media .</p>
+    </div>
+
+ <div class="project-card" data-aos="zoom-out">
+        <p class="project-title">🔒 Hacking</p>
+        <p>Normal hacing any pc or cctv cameras</p>
+    </div>
+<div class="project-card" data-aos="zoom-out">
+        <p class="project-title">👩‍💻 Coding</p>
+        <p>This website is made of my coding.</p>
+    </div>
+
+
+ <div class="project-card" data-aos="zoom-out">
+        <p class="project-title">😎 Powerpoint Works</p>
+        <p>I also creates animation using powerpoint.</p>
+    </div>
+
+ <div class="project-card" data-aos="zoom-out">
+        <p class="project-title">🥸 Excels Work</p>
+        <p>For my hard work i use excel in some days.</p>
+    </div>
+
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2 class="section-title" data-aos="fade-up">Contact</h2>
+
+    <div class="about-box" data-aos="fade-up">
+        <p>Email: Veer824231@gmail.com</p>
+        <p>Instagram Id: Yadav._.Veer</p>
+    </div>
+</section>
+<section id="contact">
+    <h2 class="section-title" data-aos="fade-up">This Is My Yotube & Instagram Id</h2>
+
+    <div class="about-box" data-aos="fade-up">
+        <p><a href="https://youtube.com/@onlyforbmw-1?si=C-8aGVsYtmRx6FEp" class="animated-link" target="_blank"><font color="red">Click Here For My Youtube Channel</font></a></p>
+<font color="pink"><p><a href="https://www.instagram.com/yadav._.veer/" class="animated-link" target="_blank"><font color="purple">Click Here For My Instagram Id</font></a></p>
+        
+    </div>
+</section>
+
+<!-- JS Background Animation -->
+<script>
+const canvas = document.getElementById("bg");
+const c = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let dots = [];
+
+for (let i = 0; i < 70; i++) {
+    dots.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        r: 2,
+        dx: (Math.random() - 0.5),
+        dy: (Math.random() - 0.5)
+    });
+}
+
+function draw() {
+    c.clearRect(0, 0, canvas.width, canvas.height);
+
+    dots.forEach(dot => {
+        c.beginPath();
+        c.arc(dot.x, dot.y, dot.r, 0, Math.PI * 2);
+        c.fill();
+
+        dot.x += dot.dx;
+        dot.y += dot.dy;
+
+        if (dot.x < 0 || dot.x > canvas.width) dot.dx *= -1;
+        if (dot.y < 0 || dot.y > canvas.height) dot.dy *= -1;
+
+        dots.forEach(other => {
+            let dist = Math.hypot(dot.x - other.x, dot.y - other.y);
+            if (dist < 120) {
+                c.beginPath();
+                c.strokeStyle = "rgba(0,0,0,0.2)";
+                c.moveTo(dot.x, dot.y);
+                c.lineTo(other.x, other.y);
+                c.stroke();
+            }
+        });
+    });
+
+    requestAnimationFrame(draw);
+}
+draw();
+</script>
+
+<!-- AOS Library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({
+    duration: 1000,
+    once: true
+});
+</script>
+
+</body>
+</html>
